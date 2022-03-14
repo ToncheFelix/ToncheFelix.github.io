@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pastelería Delí</title>
+
+</head>
+  <body style="background-image: url('assets/img/background.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;background-position: center; ">
+
+    <div class="navbar">
+      
+      <a href="index.html">
+      <img  class="logo" src="assets/img/logo.png"  />
+      </a>
+
+      <a href="index.html" class="logo">Pastelería Delí</a>
+      
+      <div class="navbar-right" id="myDIV">
+        <a class="a " href="index.html#inicio">Inicio</a>
+        <a class="a" href="index.html#menu">Menú</a>
+        <a class="a" href="index.html#pedido">Pedido</a>
+        <a class="a active" href="pastelero.html">Pastelero</a>
+        <a class="a" href="#about">About</a>
+      </div>
+    </div>
+
+
+    <div class="top" >
+    </div>
+    
+
+    <div class="container" >
+
+      <div id="inicio" class="header bg bg3" >
+       
+        <div class="clase2">
+            <h1>Estos son tus pedidos:</h1>
+            <p>Todo lo que buscas en pasteles</p>
+          </div>
+      </div>
+
+      <div id="menu" class="header bg bg2"  >
+         <div class="clase2" style="width: 500px;">
+            <h1>Actuales:</h1>
+            <h2>Pedido #1:</h2>
+            <p>nombre: Felix T V</p>
+            <p>tel:498547848</p>
+            <p>e-mail: example@gmail.com </p>
+            <p>Descripcion: doble capa, 3 leches</p>
+            <p>pastel: Vainilla</p>
+            <p>Adornos:Chispas de Chocolate</p>
+            <p>Tipo: Cumpleaños</p>
+            <p></p>
+          </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="footer">
+    <div>
+        <p>Pastelerias Deli agradece su preferencia!</p>
+        <p>JaegerTonch Corporación, asociación con Protechno - Felix Tonche Valadez</p>
+    </div>
+    </div>
+
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var navbar = document.getElementById("myDIV");
+      var btns = navbar.getElementsByClassName("a");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+      </script>
+
+      <script>
+        function myFunction() {
+          alert("Pedido en proceso");
+        }
+      </script>
+  </body>
+
+</html>

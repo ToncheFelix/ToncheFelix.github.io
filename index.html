@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pastelería Delí</title>
+
+</head>
+  <body style="background-image: url('assets/img/background.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;background-position: center; ">
+
+    <div class="navbar">
+      
+      <a href="index.html">
+      <img  class="logo" src="assets/img/logo.png"  />
+      </a>
+
+      <a href="index.html" class="logo">Pastelería Delí</a>
+      
+      <div class="navbar-right" id="myDIV">
+        <a class="a active" href="#inicio">Inicio</a>
+        <a class="a" href="#menu">Menú</a>
+        <a class="a" href="#pedido">Pedido</a>
+        <a class="a" href="pastelero.html">Pastelero</a>
+        <a class="a" href="#about">About</a>
+      </div>
+    </div>
+
+
+    <div class="top" >
+    </div>
+    
+
+    <div class="container" >
+
+      <div id="inicio" class="header bg bg1" >
+       
+        <div class="clase2">
+            <h1>Pastelería Deli</h1>
+            <p>Todo lo que buscas en pasteles</p>
+            <p>tel.93511642</p>
+            <p>ubicación: lomas del bosque, caller primavera 98032, lunes a viernes 10am a 7pm </p>
+          </div>
+      </div>
+
+      <div id="menu" class="header bg bg2" >
+         <div class="clase2" style="width: 500px;" >
+            <h1>Menu</h1>
+
+            <p>Sabores</p>
+            <h2>Menu de Sabores</h2>
+            <p>Chocolate..............$120.00</p>
+            <p>Vainilla................$140.00</p>
+            <p>Fresa.....................$145.00</p>
+            <p>Limón.................$100.00</p>
+            <h2>Menu de Adornos</h2>
+            <p>Chispas de Chocolate..............+$25.00</p>
+            <p>Chispas de colores................+$30.00</p>
+            <p>Cerezas.....................+$40.00</p>
+            <p></p>
+          </div>
+      </div>
+
+      <div id="pedido" class="header bg bg3" >
+        <div class="clase2">
+           <h1>Pedido</h1>
+           <form action="/pedido.php" onsubmit="myFunction()">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="ingrese su nombre">
+            <br><br>
+            <label for="appa">Apellido Paterno:</label>
+            <input type="text" id="appa" name="appa" placeholder="">
+            <br><br>
+            <label for="apma">Apellido Materno:</label>
+            <input type="text" id="apma" name="apma" placeholder="">
+            <br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="Nombre" name="telefono" placeholder="telefono" max="10">
+
+            <br><br>
+            <label for="email">e-mail:</label>
+            <input type="email" id="correo1" name="correo1" placeholder="e-mail"><br>
+
+            <br><br>
+            <label for="desc">Descripcion general:</label>
+            <input type="text" id="desc" name="desc" placeholder="">
+
+          
+
+            <h2>Seleccione Sabor:</h2>
+            <input type="checkbox" id="chocolate" value="Chocolate">
+            <label for="chocolate">Chocolate</label><br>
+
+            <input type="checkbox" id="vainilla" value="Vainilla">
+            <label for="vainilla">Vainilla</label><br>
+
+            <input type="checkbox" id="fresa" value="Fresa">
+            <label for="chocolate">Fresa</label><br>
+
+            <input type="checkbox" id="limon" value="Limon">
+            <label for="chocolate">Limon</label><br>
+
+            <h2>Seleccione Adorno:</h2>
+            <input type="checkbox" id="chispaschocolate" value="Chispaschocolate">
+            <label for="chispaschocolate">Chispas de chocolate</label><br>
+
+            <input type="checkbox" id="chispascolores" value="Chispascolores">
+            <label for="chispascolores">Chispas de colores</label><br>
+
+            <input type="checkbox" id="cerezas" value="Cerezas">
+            <label for="cerezas">Cerezas</label><br>
+
+
+            <p>Tipo</p>
+            <select name="pastel" id="tipo">
+                <option value="Cumpleaños">Cumpleaños</option>
+                <option value="XVaños">XVaños</option>
+                <option value="Boda">Boda</option>
+                <option value="dechill">dechill</option>
+            </select>
+
+            <br><br>
+            <input type="reset">
+            <input type="submit"  value="Realizar Pedido">
+           </form>
+         </div>
+      </div>
+
+      
+
+    </div>
+    <div class="footer">
+      <div>
+        <p>Pastelerias Deli agradece su preferencia!</p>
+        <p>JaegerTonch Corporación, asociación con Protechno - Felix Tonche Valadez</p>
+      </div>
+    </div>
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var navbar = document.getElementById("myDIV");
+      var btns = navbar.getElementsByClassName("a");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+      </script>
+
+      <script>
+        function myFunction() {
+          alert("Pedido en proceso");
+        }
+      </script>
+  </body>
+
+</html>

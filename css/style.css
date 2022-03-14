@@ -1,0 +1,211 @@
+html {
+    height: 100vh;
+  }  
+  body {
+    margin: 0 0;
+    padding: 0 0;
+    height: 100%;
+  }
+  .top {
+    overflow: hidden;
+    padding: 45px 1px;
+    width: 100%;
+    text-align: center;
+  }
+.navbar {
+  overflow: hidden;
+  background-color: rgba(206, 200, 149, 0.876);
+  padding: 10px 1px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 2px 25px #111; 
+  text-align: center;
+}
+.footer {
+  overflow: hidden;
+  background-color: rgba(206, 200, 149, 0.876);
+  width: 100%;
+  box-shadow: 0px 2px 25px #111; 
+  text-align: center;
+}
+.navbar a {
+  float: left;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+.container {
+  width: 95%;
+  height: max-content;
+  overflow-x: hidden;
+  text-align: center;
+  padding: 20px;
+  line-height: 10px; /* Create scrollbar to test positioning */
+  margin: 0 auto; /* Center the DIV horizontally */
+  background-color: rgba(206, 204, 204, 0.376);
+}
+
+.header {
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(237, 243, 202, 0.897);
+  padding: 1px 1px;
+  margin: 0 auto; /* Center the DIV horizontally */
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.header a{
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header p{
+    text-align: left;
+}
+
+.bg {
+  background-image: url('../assets/img/cakes/3.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-attachment: fixed;
+  border-radius: 10px;
+  margin-top: 60px;
+  background-position: center;
+}
+.bg1 {
+  background-image: url('../assets/img/cakes/header.jpg'); 
+}
+.bg2{
+  background-image: url('../assets/img/cakes/menu.jpg'); 
+}
+.bg3{
+  background-image: url('../assets/img/cakes/pedido.jpg'); 
+}
+.clase2 h1{
+    color: rgb(104, 53, 20);
+    font-size: 500%;
+    border-color: #111;
+    border-width: 10px;
+    text-align: center;
+    line-height: 80%;
+}
+
+.clase2 {
+    background-color: rgba(206, 200, 149, 0.95);
+    padding: 1px 1px;
+    width: 80%;
+    height: max-content;
+    margin: 0 auto; 
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+.clase2 p{
+    float: center;
+    color: rgb(104, 53, 20);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 15px;
+  }
+
+.container-element {
+  background-color: rgba(206, 200, 149, 0.95);
+  padding: 1px 1px;
+  width: 98%;
+  height: max-content;
+  margin: 0 auto; 
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  }
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the navbar to increase when the font gets bigger */
+.navbar a.logo {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Brush Script MT', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(104, 53, 20);
+}
+
+.navbar img.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+  }
+
+/* Change the background color on mouse-over */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+
+/* Style the active/current link*/
+.navbar a.active {
+  background-color: rgb(104, 53, 20);
+  color: white;
+}
+
+/* Float the link section to the right */
+.navbar-right {
+  float: right;
+  padding-right: 20px;
+  
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 665px) {
+  .navbar a {
+    float:none;
+  }
+  .navbar img.logo {
+    display: block;
+    margin-left: 40px;
+    margin-top: 0px;
+  }
+  .navbar a.logo {
+    font-size: 40px;
+    margin-left: -50px;
+    
+  }
+  .navbar-right{
+    display: inline-block;
+    width: 90%;
+    padding-right: -30px;
+  }
+  .bg1{
+    background-image: url('../assets/img/cakes/3.jpg'); 
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .clase2 h1{
+    color: rgb(104, 53, 20);
+    font-size: 200%;
+    border-color: #111;
+    border-width: 10px;
+    text-align: center;
+}
+.clase2 p{
+  float: center;
+  color: rgb(104, 53, 20);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+}
